@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>EFT Game</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+					<h1 class="logo-title">EFT Game & Simulation</h1>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="#product">Register a session</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<li><a href="indexUserSesi.php">List of your session</a></li>
+				</ul>
+			</nav>
+			<button class="btn-cta2" onclick="redirLogout()">Logout</button>
+		</header>
+		<div class="parallax">
+			<div class="card-item2">
+				<li></li>
+				<p class="title">Enhancing more expertise through hands-on troubleshooting experience!</p>
+				<p class="description">for Electro Technical Officer trainee or electrical team in shipbuilder/shipping company.</p>
+				<li></li>
+				<img src="assets/icon/EFTlogo.jpg" alt="foto 1" class="img-foto"/>
+				<li></li>
+			</div>
+		</div>
+		<div class="parallax">
+			<div class="tentang">
+				<p class="description">Earth fault is considered very critical on board a ship.</p>
+				<p class="description">Any earth fault on a 440V system is regarded as a significant issue, and immediate action is required to identify the defective circuit. Any earth fault on a 220V or low voltage lighting circuit can be deemed significant, but does not necessarily require immediate attention. However, consideration must be given at the earliest opportunity.</p>
+				
+			</div>
+			<div class="container">
+					<div class="card" id="product">
+						<div class="card-item">
+							<img src="assets/training.JPG" alt="icon 1" class="icon" onclick="redirTraining"/>
+							<p class="card-title">Eart Fault Troubleshooting Training Station</p>
+							<p class="card-description">Experiencing locating eart fault on the real electrical panel</p>
+							<button class="btn-cta" onclick="redirRegistrationTS()">Register for session</button>
+						</div>
+						<div class="card-item">
+							<img src="assets/game.png" alt="icon 2"  class="icon" onclick="redirGame()"/>
+							<p class="card-title">Earth Fault Troubleshooting Virtual Serious Game</p>
+							<p class="card-description">Understanding troubleshooting situation in the virtual ship environment</p>
+							<p>  </p>
+							<button class="btn-cta2"> Coming soon.. </button>
+						</div>
+						
+					</div>
+			</div>
+		</div>
+		<footer>
+			<div class="mt-10">
+				<img src="assets/icon/wa.png" onclick="redirWhatsapp()" style="width: 30px; height: 30px; cursor: pointer;"/>
+				<img src="assets/icon/email.png" onclick="redirEmail()" style="width: 30px; height: 30px; cursor: pointer;"/>
+			</div>
+			<li></li>
+			<p class="title">&copy; EFT Website 2023</p>
+		</footer>
+		
+		<script>
+			function redirEmail() {
+				window.location.href = 	"mailto:rona.riantini@ppns.ac.id"
+			}
+			
+			function redirWhatsapp() {
+				window.location.href = "https://wa.me/+6282140034544"
+			}
+
+			function redirRegistrationTS() {
+				window.location.href = "registrationTS.php"
+			}
+			function redirLogout() {
+				window.location.href = "logout.php"
+			}
+			function redirTraining() {
+				window.location.href = "training.html"
+			}
+			function redirGame() {
+				window.location.href = "game.html"
+			}
+		</script>
+	</body>
+</html>
